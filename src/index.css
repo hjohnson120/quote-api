@@ -1,12 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
 
 html {
   height: 100%;
+  background-color: honeydew;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Noto Sans';
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 5%;
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: teal;
+}
+
+.picture {
+  display: flex;
+  margin: 3%;
+}
+
+.ingredients {
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+  color: darkslategrey;
+}
+
+.instructions {
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-size: 1.5rem;
+  color: darkslategrey;
+  margin-bottom: 4%;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+.recipeSearchBox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

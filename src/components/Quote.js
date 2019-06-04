@@ -3,6 +3,7 @@ import axios from 'axios'
 
 export default function GetARecipe() {
   const [food, searchFood] = useState('')
+  // const [recipe, returnedRecipe] = useState('')
 
   const searchRecipe = e => {
     e.preventDefault()
@@ -15,7 +16,9 @@ export default function GetARecipe() {
 
   return (
     <section>
-      <form onSubmit={searchRecipe}>
+      <h1>{food.strMeal}</h1>
+
+      <form className="recipeSearchBox" onSubmit={searchRecipe}>
         <input
           type="text"
           placeholder="Search a Recipe.."
@@ -25,8 +28,25 @@ export default function GetARecipe() {
           }}
         />
       </form>
-      <h1>{food.strMeal}</h1>
-      <p>{food.strInstructions}</p>
+      <section className="picture">
+        <ul className="ingredients">
+          <li>{food.strIngredient1}</li>
+          <li>{food.strIngredient2}</li>
+          <li>{food.strIngredient3}</li>
+          <li>{food.strIngredient4}</li>
+          <li>{food.strIngredient5}</li>
+          <li>{food.strIngredient6}</li>
+          <li>{food.strIngredient7}</li>
+          <li>{food.strIngredient8}</li>
+          <li>{food.strIngredient9}</li>
+          <li>{food.strIngredient10}</li>
+          <li>{food.strIngredient11}</li>
+          <li>{food.strIngredient12}</li>
+          <li>{food.strIngredient13}</li>
+        </ul>
+        <img src={food.strMealThumb} alt=" " />
+      </section>
+      <p className="instructions">{food.strInstructions}</p>
     </section>
   )
 }
