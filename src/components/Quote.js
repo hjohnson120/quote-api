@@ -44,7 +44,9 @@ export default function GetARecipe() {
           <li>{food.strIngredient12}</li>
           <li>{food.strIngredient13}</li>
         </ul>
-        <img src={food.strMealThumb} alt=" " />
+        <div className="img">
+          <img src={food.strMealThumb} />
+        </div>
       </section>
       <p className="instructions">{food.strInstructions}</p>
     </section>
