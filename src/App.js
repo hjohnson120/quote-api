@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Quote from './components/Quote'
+import Recipe from './components/Recipe'
 
 class App extends Component {
   render() {
-    return <Quote />
+    return <Recipe />
   }
 }
 
